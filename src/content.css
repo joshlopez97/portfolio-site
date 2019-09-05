@@ -125,7 +125,7 @@ span.job-title {
   padding: 15px;
 }
 .contact-info > a {
-  margin: 10px 15px;
+  margin: 10px 30px 10px 0;
   display: inline-block;
   height: 40px;
   border: 1px solid #98cefb;
