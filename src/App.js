@@ -67,8 +67,12 @@ function App() {
               <span className="date">June 2019 - Current</span>
             </div>
             <ul className="job-description">
-              <li>Optimize and improve analytics application that aggregates and processes massive amounts of customer data</li>
-              <li>Develop and maintain many different Java backend services; frequently working Kafka, S3, Elasticsearch, MariaDB, and mySQL</li>
+              <li>Optimize and improve analytics application that aggregates and processes massive amounts of customer
+                data
+              </li>
+              <li>Develop and maintain many different Java backend services; frequently working Kafka, S3,
+                Elasticsearch, MariaDB, and mySQL
+              </li>
               <li>Deploy features and bugfixes using Kubernetes, Helm, and Docker</li>
             </ul>
           </div>
@@ -79,9 +83,13 @@ function App() {
               <span className="date">September 2018 - January 2019</span>
             </div>
             <ul className="job-description">
-              <li>Contracted to work on small team to build a mobile terminal management system for customers to manage payment devices remotely</li>
+              <li>Contracted to work on small team to build a mobile terminal management system for customers to manage
+                payment devices remotely
+              </li>
               <li>Built application using Node.js and Express and wireframes using Balsamiq</li>
-              <li>Application featured barcode scanner, GPS tracking of devices, secure 2FA, and other adminstrative tasks</li>
+              <li>Application featured barcode scanner, GPS tracking of devices, secure 2FA, and other adminstrative
+                tasks
+              </li>
             </ul>
           </div>
           <div className="job">
@@ -91,9 +99,15 @@ function App() {
               <span className="date">June 2018 - September 2018</span>
             </div>
             <ul className="job-description">
-              <li>Worked on Proofpoint's TAP Dashboard product, which I eventually continued to work on as a full-time software engineer</li>
-              <li>Investigated issues breaking downstream services that consumed from Kafka rest proxies and S3 buckets</li>
-              <li>Built data schema monitoring and validation library using Java, Guice, Jackson, and Maven and implemented into existing pipeline of services</li>
+              <li>Worked on Proofpoint's TAP Dashboard product, which I eventually continued to work on as a full-time
+                software engineer
+              </li>
+              <li>Investigated issues breaking downstream services that consumed from Kafka rest proxies and S3
+                buckets
+              </li>
+              <li>Built data schema monitoring and validation library using Java, Guice, Jackson, and Maven and
+                implemented into existing pipeline of services
+              </li>
             </ul>
             <div>
               <span className="job-title">DevOps Engineer Intern</span>
@@ -101,7 +115,9 @@ function App() {
             </div>
             <ul className="job-description">
               <li>Developed web application for searching and accessing thousands of Confluence resources</li>
-              <li>Used Flask, WSGI, NGINX, and Atlassian APIs to build backend and HTML, CSS, & Javascript for frontend</li>
+              <li>Used Flask, WSGI, NGINX, and Atlassian APIs to build backend and HTML, CSS, & Javascript for
+                frontend
+              </li>
               <li>Additional development on fixing & improving infrastructure tools, mainly using Python & PHP</li>
             </ul>
           </div>
@@ -112,31 +128,44 @@ function App() {
           <a href="https://gradetip.com" className="project">
             <h5>GradeTip<i className="fa fa-external-link"/></h5>
             <img className="project-image" src="/gradetip.png"/>
-            <p>Document sharing platform and forum developed by me and some other students as part of a small business idea. Users can create
-            an account, submit text posts, reply to posts, upload PDF documents of study resources, and browse through posts listed on each
-            school's page. Each PDF upload spawns the generation of a partially blurred PNG preview of the first page before a user would "buy"
-            that document.</p>
+            <p>Document sharing platform and forum developed by me and some other students as part of a small business
+              idea. Users can create
+              an account, submit text posts, reply to posts, upload PDF documents of study resources, and browse through
+              posts listed on each
+              school's page. Each PDF upload spawns the generation of a partially blurred PNG preview of the first page
+              before a user would "buy"
+              that document.</p>
           </a>
           <a href="https://movienight.dev/" className="project">
-            <h5>GradeTip<i className="fa fa-external-link"/></h5>
+            <h5>MovieNight<i className="fa fa-external-link"/></h5>
             <img className="project-image" src="/movienight.png"/>
-            <p>Movie browsing and shopping site composed of several microservices and databases. Users can perform simple and advanced
-              queries for movie or actor data, rate movies, add movies to shopping cart, checkout, along with hidden admin tasks for
-              privileged users. The site is simply a proof of concept and not meant for real use; payment requests use Paypal sandbox
+            <p>Movie browsing and shopping site composed of several microservices and databases. Users can perform
+              simple and advanced
+              queries for movie or actor data, rate movies, add movies to shopping cart, checkout, along with hidden
+              admin tasks for
+              privileged users. The site is simply a proof of concept and not meant for real use; payment requests use
+              Paypal sandbox
               for demo purposes.</p>
           </a>
           <a href="https://github.com/joshlopez97/iDiet" className="project">
             <h5>iDiet<i className="fa fa-external-link"/></h5>
             <img className="project-image" src="/idiet.png"/>
-            <p>Node.js mobile web application that produces weekly diet plans based on Harris Benedict equation for recommended calories
-              and financial budget. The food suggestions are continuously improved based on past user behavior and level of physical
-              activity pulled from FitBit API.</p>
+            <p>Mobile web application that produces weekly diet plans based on Harris Benedict equation for recommended
+              calories
+              while also keeping within a specified financial budget. The food suggestions are continuously improved
+              based on past user behavior and level of physical
+              activity (integrated with FitBit API). We also integrated with Facebook's API to allow users to share
+              their diet plans with their friends. Application is built
+              using Express and Node.js with a mySQL database.</p>
           </a>
           <a href="https://joshlopez97.github.io/FireEscape/" className="project">
             <h5>Fire-Escape<i className="fa fa-external-link"/></h5>
             <img className="project-image" src="/malmo.png"/>
-            <p>Machine learning project as part of our team's submissions to Microsoft's Malmo Collaborative AI Challenge, where we train an agent
-            in Minecraft to make non-trivial decisions on risk / reward scenarios in an obstacle course game.</p>
+            <p>Machine learning project as part of our team's submissions to Microsoft's Malmo Collaborative AI
+              Challenge, where we train an agent
+              in Minecraft to make non-trivial decisions on risk / reward scenarios in an obstacle course game. Our
+              model used deep Q-learning to
+              train the optimize the performance of the agent in the game.</p>
           </a>
         </div>
         <div className="contact page">
@@ -172,6 +201,7 @@ function goToExperience() {
 function goToAbout() {
   window.location = "#about";
 }
+
 function goToContact() {
   window.location = "#contact";
 }
