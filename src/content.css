@@ -1,0 +1,139 @@
+div.content.pageholder {
+  top: 100%;
+  padding: 5%;
+}
+.page::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #7e82b3;
+  z-index: 1;
+  left: 0;
+  display: inline-block;
+}
+div.me {
+  background: url(/pic.jpg) no-repeat center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px #030517;
+  filter: opacity(0.85);
+}
+div.me-holder {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+div.about-text {
+  display: inline-block;
+  max-width: 50%;
+  margin: 10px;
+  vertical-align: top;
+  padding: 10px;
+  float: left;
+}
+div.about-text ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+h1.page-header {
+  font-family: 'Roboto Slab', sans-serif;
+  margin: 15px;
+}
+span.emphasis {
+  font-weight: bold;
+}
+@media (max-width: 500px)
+{
+  div.me {
+    width: 100px;
+    height: 100px;
+  }
+  div.me-holder {
+    width: unset;
+    display: block;
+    margin: auto;
+  }
+  div.about-text {
+    max-width: 100%;
+  }
+  div.about-text ul {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+}
+
+.company {
+  color: #98cefb;
+}
+div.job {
+  padding: 15px;
+}
+span.date {
+  float: right;
+  color: #eee;
+}
+span.job-title {
+}
+.job-description {
+  color: #b5d3e2;
+}
+@media (max-width: 500px)
+{
+  span.date {
+    float: initial;
+    display: block;
+  }
+  span.job-title {
+    display: block;
+  }
+}
+
+.project
+{
+  color: white;
+  max-width: 500px;
+  border: 1px solid #98cefb;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px 15px;
+  vertical-align: middle;
+}
+.project:hover
+{
+  color: white;
+  text-decoration: none;
+}
+.fa {
+  float: right;
+}
+.project-image {
+  width: 100%;
+  margin: 10px 0;
+}
+@media (max-width: 500px)
+{
+  .project-image {
+    max-width: 320px;
+  }
+}
+.contact-info {
+  padding: 15px;
+}
+.contact-info > a {
+  margin: 10px 15px;
+  display: inline-block;
+  height: 40px;
+  border: 1px solid #98cefb;
+  padding: 10px;
+  color: #98cefb;
+  line-height: 20px;
+}
+.contact-info > a:hover {
+  color: #77a5cc;
+  border: 1px solid #77a5cc;
+}
