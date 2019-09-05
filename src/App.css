@@ -1,40 +1,194 @@
-.homepage-container {
-  background: none;
-  padding: 10pt 0;
+html, body {
+  background: #0d1031;
+}
+.pageholder {
   height: 100%;
   width: 100%;
   position: absolute;
+  background: #0d1031;
 }
-.header-holder {
-  background: none;
-  text-align: center;
-  padding: 15pt 1pt;
-  top: 50%;
-  position: absolute;
-  transform: translate(0, -50%);
+.page {
+  display: table;
+  margin-bottom: 50px;
   width: 100%;
 }
-
-.header-text {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 4.5rem;
+div.navigation {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  padding: 0 15px;
+  background: #0d1031;
 }
-.header-subtext {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.9rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 1px;
+div.navigation.top * {
+  float: right;
 }
-@media (max-width: 725px) {
-  .header-text {
-    font-size: 2.3rem;
+div.navigation.bottom {
+  bottom: 0;
+}
+div.navigation.bottom.show {
+  animation: show-bottom-nav 0.3s ease-in forwards;
+}
+div.navigation.bottom.hide {
+  animation: hide-bottom-nav 0.3s ease-in forwards;
+}
+@keyframes show-bottom-nav {
+  from {
+    transform: translateY(100%);
   }
-  .header-subtext {
-    font-size: 1.3rem
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes hide-bottom-nav {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+div.navigation.top.show {
+  animation: show-top-nav 0.3s ease-in forwards;
+}
+div.navigation.top.hide {
+  animation: hide-top-nav 0.3s ease-in forwards;
+}
+@keyframes show-top-nav {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes hide-top-nav {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+div.line {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 1px;
+  background-color: #7e82b3;
+  margin: 26px 0;
+}
+div.line.right {
+  animation: big-line 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.navigation.bottom > .line.right {
+  animation: medium-line 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+div.line.left {
+  animation: small-line 0.3s ease-in-out forwards;
+  animation-delay: 1.8s;
+}
+@keyframes small-line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20px;
+  }
+}
+@keyframes medium-line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30px;
+  }
+}
+@keyframes big-line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80px;
+  }
+}
+.navlinks {
+  display: inline-block;
+  padding: 15px 10px;
+  opacity: 0;
+  animation: faderight 0.5s ease-in forwards;
+  animation-delay: 1.3s;
+}
+@keyframes faderight {
+  from {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+  to {
+    opacity: 100;
+    transform: translateX(0px);
+  }
+}
+.navlinks > span {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.navlinks > span:hover {
+  opacity: 100;
+  animation: color 0.2s ease-out forwards;
+}
+.quicklinks {
+  padding: 5px;
+  display: inline-block;
+  opacity: 0;
+  animation: fadeleft 0.5s ease-in forwards;
+  animation-delay: 1.3s;
+  margin: 0 5px;
+}
+.quicklinks > svg {
+  height: 40px;
+  cursor: pointer;
+  padding: 10px;
+}
+@keyframes fadeleft {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 100;
+    transform: translateX(0px);
+  }
+}
+.quicklinks path {
+  fill: #ffffff;
+}
+.quicklinks > svg:hover {
+  animation: grow 0.2s ease-in forwards;
+}
+.quicklinks > svg:hover path {
+  animation: color 0.3s ease-in forwards;
+}
+
+@keyframes color {
+  from {
+    fill: #ffffff;
+    color: #ffffff;
+  }
+  to {
+    fill: #b6bbf2;
+    color: #b6bbf2;
   }
 }
 
-.colored {
-  color: #54d27d;
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }

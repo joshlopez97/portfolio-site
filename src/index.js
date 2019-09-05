@@ -12,6 +12,24 @@ setInterval(()=>{
   else if (!!cursor)
     cursor.style.visibility = "visible";
 }, 500);
+let lastScrollTop = 0;
+window.addEventListener("scroll", function(){
+  let st = window.pageYOffset || document.documentElement.scrollTop;
+  if (st > lastScrollTop){
+    console.log("down");
+    document.getElementById("bottom").classList.remove("show");
+    document.getElementById("top").classList.remove("show");
+    document.getElementById("bottom").classList.add("hide");
+    document.getElementById("top").classList.add("hide");
+  } else {
+    document.getElementById("bottom").classList.remove("hide");
+    document.getElementById("top").classList.remove("hide");
+    document.getElementById("bottom").classList.add("show");
+    document.getElementById("top").classList.add("show");
+  }
+  lastScrollTop = st <= 0 ? 0 : st;
+}, false);
+
 
 
 // If you want your app to work offline and load faster, you can change
