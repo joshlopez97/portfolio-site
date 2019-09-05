@@ -136,6 +136,11 @@ div.line.left {
   cursor: pointer;
   padding: 0 15px;
 }
+@media (max-width: 400px) {
+  .navlinks > span {
+    padding: 0 10px;
+  }
+}
 .navlinks > span:hover {
   opacity: 100;
   animation: color 0.2s ease-out forwards;
