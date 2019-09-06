@@ -42,7 +42,6 @@ function App() {
       </div>
       <div className="content pageholder">
         <div className="about page">
-          <a name="about"/>
           <h1 className="page-header">About Me</h1>
           <div className="me-holder">
             <div className="me"/>
@@ -62,7 +61,6 @@ function App() {
           </div>
         </div>
         <div className="experience page">
-          <a name="experience"/>
           <h1 className="page-header">Work Experience</h1>
           <div className="job">
             <h5 className="company">Proofpoint</h5>
@@ -140,7 +138,18 @@ function App() {
               before a user would "buy"
               that document.</p>
           </a>
-          <a href="https://movienight.dev/" className="project">
+          <a href="https://idtechproducts.com/products/unattended-payments/vivostate-terminal-management-system/"
+             className="project">
+            <h5>Mobile Terminal Management System<i className="fa fa-external-link"/></h5>
+            <img className="project-image" src="/idtech.png"/>
+            <p>Web application built with Node.js and Express that enables customers to quickly and easily monitor and
+              control
+              their ID Tech payment devices and chip readers. The app pulls device status information in real-time and
+              allows for users
+              to perform remote software updates, identify device info from the barcode of a device (using
+              <a href="https://serratus.github.io/quaggaJS/">QuaggaJS</a>), and much more.</p>
+          </a>
+          <a href="https://github.com/joshlopez97/MovieNight" className="project">
             <h5>MovieNight<i className="fa fa-external-link"/></h5>
             <img className="project-image" src="/movienight.png"/>
             <p>Movie browsing and shopping site composed of several microservices and databases. Users can perform
@@ -163,7 +172,7 @@ function App() {
               using Express and Node.js with a mySQL database.</p>
           </a>
           <a href="https://joshlopez97.github.io/FireEscape/" className="project">
-            <h5>Fire-Escape<i className="fa fa-external-link"/></h5>
+            <h5>FireEscape<i className="fa fa-external-link"/></h5>
             <img className="project-image" src="/malmo.png"/>
             <p>Machine learning project as part of our team's submissions to Microsoft's Malmo Collaborative AI
               Challenge, where we train an agent
@@ -171,9 +180,17 @@ function App() {
               model used deep Q-learning to
               train the optimize the performance of the agent in the game.</p>
           </a>
+          <a href="https://github.com/joshlopez97/Poisson-Reconstruction" className="project">
+            <h5>Poisson Reconstruction<i className="fa fa-external-link"/></h5>
+            <img className="project-image" src="/poisson.png"/>
+            <p>Computer vision project in which a set of images taken under special lighting conditions are composited
+              to a 3D mesh that is colored and rendered into a full-scale 3D model of the original object using Poisson
+              surface reconstruction and bounded box pruning. The pipeline is composed of MATLAB scripts and functions
+              that perform the image processing.
+            </p>
+          </a>
         </div>
         <div className="contact page">
-          <a name="contact"/>
           <h1 className="page-header">Get in touch!</h1>
           <div className="contact-info">
             <p>Feel free to message me with any opportunites!</p>
@@ -201,10 +218,9 @@ function goToProjects() {
   scrollTo("projects");
 }
 
-function scrollTo(pageName, duration=1500)
+function scrollTo(pageName, duration = 1500)
 {
   let pos = document.getElementsByClassName(`${pageName} page`)[0].getBoundingClientRect().top;
-  // window.scrollTo(0, pos);
   scroller.scrollTo(pos, {
     duration: duration,
     smooth: true
@@ -216,7 +232,7 @@ function goToExperience() {
 }
 
 function goToAbout() {
-  scrollTo("about");
+  scrollTo("about", 1000);
 }
 
 function goToContact() {
