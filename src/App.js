@@ -3,6 +3,10 @@ import './App.css';
 import './home.css';
 import './content.css';
 
+let Scroll = require('react-scroll');
+let Element = Scroll.Element;
+let scroller = Scroll.animateScroll;
+
 function App() {
   return (
     <div className="app-container">
@@ -48,8 +52,8 @@ function App() {
               passion for
               learning new things and delivering <span className="emphasis">high quality applications</span>.</p>
             <p> My main focus is customer-facing web and application development. I'm especially interested
-              in the product-side of things. I love learning what the customer needs out of a product and working
-              on a team to decide the best way to meet those needs.
+              in the product-side of things. I love learning what the customer needs from a product and getting
+              to help decide the best way to meet those needs.
             </p>
             <p> Currently, I'm working as a Software Engineer at <a href="https://www.proofpoint.com/us">Proofpoint</a>.
               Here,
@@ -70,10 +74,10 @@ function App() {
               <li>Optimize and improve analytics application that aggregates and processes massive amounts of customer
                 data
               </li>
-              <li>Develop and maintain many different Java backend services; frequently working Kafka, S3,
-                Elasticsearch, MariaDB, and mySQL
+              <li>Develop and maintain Java backend services; frequently working Kafka, S3,
+                Elasticsearch, MariaDB, and mySQL data
               </li>
-              <li>Deploy features and bugfixes using Kubernetes, Helm, and Docker</li>
+              <li>Deploy features and bugfixes using Kubernetes, Jenkins, Puppet, and Docker</li>
             </ul>
           </div>
           <div className="job">
@@ -123,7 +127,7 @@ function App() {
           </div>
         </div>
         <div className="projects page">
-          <a name="projects"/>
+          <Element name="projects"/>
           <h1 className="page-header">Projects</h1>
           <a href="https://gradetip.com" className="project">
             <h5>GradeTip<i className="fa fa-external-link"/></h5>
@@ -177,6 +181,9 @@ function App() {
             <a href="https://linkedin.com/in/josh-lopez1/">LinkedIn</a>
           </div>
         </div>
+        <div className="footer">
+          Website built by Josh Lopez. All rights reserved
+        </div>
       </div>
     </div>
   );
@@ -191,19 +198,29 @@ function goToLinkedIn() {
 }
 
 function goToProjects() {
-  window.location = "#projects";
+  scrollTo("projects");
+}
+
+function scrollTo(pageName, duration=1500)
+{
+  let pos = document.getElementsByClassName(`${pageName} page`)[0].getBoundingClientRect().top;
+  // window.scrollTo(0, pos);
+  scroller.scrollTo(pos, {
+    duration: duration,
+    smooth: true
+  });
 }
 
 function goToExperience() {
-  window.location = "#experience";
+  scrollTo("experience");
 }
 
 function goToAbout() {
-  window.location = "#about";
+  scrollTo("about");
 }
 
 function goToContact() {
-  window.location = "#contact";
+  scrollTo("contact");
 }
 
 

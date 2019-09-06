@@ -14,21 +14,43 @@ setInterval(()=>{
 }, 500);
 let lastScrollTop = 0;
 window.addEventListener("scroll", function(){
-  let st = window.pageYOffset || document.documentElement.scrollTop;
-  if (st > lastScrollTop){
-    console.log("down");
-    document.getElementById("bottom").classList.remove("show");
-    document.getElementById("top").classList.remove("show");
-    document.getElementById("bottom").classList.add("hide");
-    document.getElementById("top").classList.add("hide");
-  } else {
-    document.getElementById("bottom").classList.remove("hide");
-    document.getElementById("top").classList.remove("hide");
-    document.getElementById("bottom").classList.add("show");
-    document.getElementById("top").classList.add("show");
+  if (footerVisible())
+    console.log("bottom");
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (lastScrollTop - scrollTop > 2 && !footerVisible()){
+    showNavbar();
+  } else if  (scrollTop - lastScrollTop > 2) {
+    hideNavbar();
   }
-  lastScrollTop = st <= 0 ? 0 : st;
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }, false);
+
+function atBottomOfPage()
+{
+  console.log((window.innerHeight + window.pageYOffset), document.body.scrollHeight);
+  return (window.innerHeight + window.pageYOffset) <= document.body.scrollHeight;
+}
+function footerVisible()
+{
+  let topOfFooter = document.getElementsByClassName("footer")[0].getBoundingClientRect().top;
+  return topOfFooter - window.innerHeight <= 0;
+}
+
+function showNavbar()
+{
+  document.getElementById("bottom").classList.remove("hide");
+  document.getElementById("top").classList.remove("hide");
+  document.getElementById("bottom").classList.add("show");
+  document.getElementById("top").classList.add("show");
+}
+
+function hideNavbar()
+{
+  document.getElementById("bottom").classList.remove("show");
+  document.getElementById("top").classList.remove("show");
+  document.getElementById("bottom").classList.add("hide");
+  document.getElementById("top").classList.add("hide");
+}
 
 
 
