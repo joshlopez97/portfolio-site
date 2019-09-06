@@ -56,7 +56,7 @@ function App() {
             </p>
             <p> Currently, I'm working as a Software Engineer at <a href="https://www.proofpoint.com/us">Proofpoint</a>.
               Here,
-              I'm able to build, deploy, and maintain software for Proofpoint's TAP Dashboard product.
+              I'm able to build and maintain software for Proofpoint's TAP Dashboard product.
             </p>
           </div>
         </div>
@@ -177,8 +177,7 @@ function App() {
             <p>Machine learning project as part of our team's submissions to Microsoft's Malmo Collaborative AI
               Challenge, where we train an agent
               in Minecraft to make non-trivial decisions on risk / reward scenarios in an obstacle course game. Our
-              model used deep Q-learning to
-              train the optimize the performance of the agent in the game.</p>
+              model used deep Q-learning and Q-networks to optimize the performance of the agent in the game.</p>
           </a>
           <a href="https://github.com/joshlopez97/Poisson-Reconstruction" className="project">
             <h5>Poisson Reconstruction<i className="fa fa-external-link"/></h5>
