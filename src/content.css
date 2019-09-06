@@ -79,6 +79,9 @@ span.date {
 }
 span.job-title {
 }
+.job-info {
+  margin-bottom: 10px;
+}
 .job-description {
   color: #b5d3e2;
 }

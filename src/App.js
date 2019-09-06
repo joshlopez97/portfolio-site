@@ -64,7 +64,7 @@ function App() {
           <h1 className="page-header">Work Experience</h1>
           <div className="job">
             <h5 className="company">Proofpoint</h5>
-            <div>
+            <div className="job-info">
               <span className="job-title">Software Engineer</span>
               <span className="date">June 2019 - Current</span>
             </div>
@@ -80,7 +80,7 @@ function App() {
           </div>
           <div className="job">
             <h5 className="company">ID Tech</h5>
-            <div>
+            <div className="job-info">
               <span className="job-title">Software Engineer</span>
               <span className="date">September 2018 - January 2019</span>
             </div>
@@ -96,7 +96,7 @@ function App() {
           </div>
           <div className="job">
             <h5 className="company">Proofpoint</h5>
-            <div>
+            <div className="job-info">
               <span className="job-title">Software Engineer Intern</span>
               <span className="date">June 2018 - September 2018</span>
             </div>
