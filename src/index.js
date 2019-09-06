@@ -25,11 +25,6 @@ window.addEventListener("scroll", function(){
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }, false);
 
-function atBottomOfPage()
-{
-  console.log((window.innerHeight + window.pageYOffset), document.body.scrollHeight);
-  return (window.innerHeight + window.pageYOffset) <= document.body.scrollHeight;
-}
 function footerVisible()
 {
   let topOfFooter = document.getElementsByClassName("footer")[0].getBoundingClientRect().top;

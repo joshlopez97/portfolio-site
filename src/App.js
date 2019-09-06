@@ -130,13 +130,14 @@ function App() {
           <a href="https://gradetip.com" className="project">
             <h5>GradeTip<i className="fa fa-external-link"/></h5>
             <img className="project-image" src="/gradetip.png"/>
-            <p>Document sharing platform and forum developed by me and some other students as part of a small business
-              idea. Users can create
-              an account, submit text posts, reply to posts, upload PDF documents of study resources, and browse through
-              posts listed on each
-              school's page. Each PDF upload spawns the generation of a partially blurred PNG preview of the first page
-              before a user would "buy"
-              that document.</p>
+            <p>Document sharing platform and forum for college students developed as part of a small business
+              idea. Users can interact with other users in the form of text posts, replies, and likes on their school's
+              page. The intention is to allow students to ask for help/advice on courses. Users can also upload PDF
+              documents
+              of study resources for sale to other students, which creates a partially blurred PNG preview of
+              the first page in the document for the listing. All content on the site must be approved by moderators
+              before being publicly
+              available to prevent copyright issues.</p>
           </a>
           <a href="https://idtechproducts.com/products/unattended-payments/vivostate-terminal-management-system/"
              className="project">
@@ -146,13 +147,13 @@ function App() {
               control
               their ID Tech payment devices and chip readers. The app pulls device status information in real-time and
               allows for users
-              to perform remote software updates, identify device info from the barcode of a device (using
-              <a href="https://serratus.github.io/quaggaJS/">QuaggaJS</a>), and much more.</p>
+              to perform remote software updates, identify device info from the barcode of a device (using <a
+                href="https://serratus.github.io/quaggaJS/">QuaggaJS</a>), and much more.</p>
           </a>
           <a href="https://github.com/joshlopez97/MovieNight" className="project">
             <h5>MovieNight<i className="fa fa-external-link"/></h5>
             <img className="project-image" src="/movienight.png"/>
-            <p>Movie browsing and shopping site composed of several microservices and databases. Users can perform
+            <p>Movie browsing and shopping site composed of several Java microservices and databases. Users can perform
               simple and advanced
               queries for movie or actor data, rate movies, add movies to shopping cart, checkout, along with hidden
               admin tasks for
@@ -163,8 +164,9 @@ function App() {
           <a href="https://github.com/joshlopez97/iDiet" className="project">
             <h5>iDiet<i className="fa fa-external-link"/></h5>
             <img className="project-image" src="/idiet.png"/>
-            <p>Mobile web application that produces weekly diet plans based on Harris Benedict equation for recommended
-              calories
+            <p>Mobile web application that produces weekly diet plans based on the Harris-Benedict equation for
+              recommended
+              calories,
               while also keeping within a specified financial budget. The food suggestions are continuously improved
               based on past user behavior and level of physical
               activity (integrated with FitBit API). We also integrated with Facebook's API to allow users to share
@@ -219,7 +221,7 @@ function goToProjects() {
 
 function scrollTo(pageName, duration = 1500)
 {
-  let pos = document.getElementsByClassName(`${pageName} page`)[0].getBoundingClientRect().top;
+  let pos = document.getElementsByClassName(`${pageName} page`)[0].getBoundingClientRect().top + window.pageYOffset - 40;
   scroller.scrollTo(pos, {
     duration: duration,
     smooth: true
@@ -235,8 +237,11 @@ function goToAbout() {
 }
 
 function goToContact() {
-  scrollTo("contact");
+  let pos = document.getElementsByClassName(`footer`)[0].getBoundingClientRect().top - window.innerHeight + window.pageYOffset;
+  scroller.scrollTo(pos, {
+    duration: 1500,
+    smooth: true
+  });
 }
-
 
 export default App;
