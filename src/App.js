@@ -89,8 +89,10 @@ function App() {
                 payment devices remotely
               </li>
               <li>Built application using Node.js and Express and wireframes using Balsamiq</li>
-              <li>Application featured barcode scanner, GPS tracking of devices, secure 2FA, and other adminstrative
-                tasks
+              <li>App pulls device status information in real-time and
+                allows for users
+                to perform remote firmware updates, remote reboots, identify device info from the barcode of a device (using <a
+                  href="https://serratus.github.io/quaggaJS/">QuaggaJS</a>), and much more
               </li>
             </ul>
           </div>
@@ -141,13 +143,13 @@ function App() {
           </a>
           <a href="https://idtechproducts.com/products/unattended-payments/vivostate-terminal-management-system/"
              className="project">
-            <h5>Mobile Terminal Management System<i className="fa fa-external-link"/></h5>
+            <h5>ViVOstate TMS<i className="fa fa-external-link"/></h5>
             <img className="project-image" src="/idtech.png"/>
-            <p>Web application built with Node.js and Express that enables customers to quickly and easily monitor and
+            <p>Mobile web application built for ID Tech with Node.js and Express that enables customers to easily monitor and
               control
               their ID Tech payment devices and chip readers. The app pulls device status information in real-time and
               allows for users
-              to perform remote software updates, identify device info from the barcode of a device (using <a
+              to perform remote firmware updates, remote reboots, identify device info from the barcode of a device (using <a
                 href="https://serratus.github.io/quaggaJS/">QuaggaJS</a>), and much more.</p>
           </a>
           <a href="https://github.com/joshlopez97/MovieNight" className="project">
