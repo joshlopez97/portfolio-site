@@ -96,36 +96,6 @@ span.job-title {
   }
 }
 
-.project
-{
-  color: white;
-  max-width: 500px;
-  border: 1px solid #98cefb;
-  display: inline-block;
-  padding: 20px;
-  margin: 20px 15px;
-  vertical-align: middle;
-}
-.project:hover
-{
-  color: white;
-  text-decoration: none;
-  background: #98cefb12;
-}
-.fa {
-  float: right;
-}
-.project-image {
-  width: 100%;
-  margin: 10px 0;
-}
-@media (max-width: 500px)
-{
-  .project-image {
-    max-width: 320px;
-  }
-}
-
 .contact.page {
   margin: 0;
   text-align: center;

@@ -1,0 +1,65 @@
+.project
+{
+  cursor: pointer;
+  color: white;
+  width: calc(100% - 30px);
+  border: 1px solid #98cefb;
+  display: block;
+  padding: 30px;
+  margin: 20px 15px;
+  vertical-align: middle;
+}
+.project-title
+{
+  display: inline-block;
+}
+.project:hover
+{
+  color: white;
+  text-decoration: none;
+  background: #98cefb12;
+}
+.project-header {
+  margin-bottom: 5px;
+}
+.project-language {
+  background: #6c74ca54;
+  font-size: 9pt;
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.external-link-icon-holder {
+  display: inline-block;
+  float: right;
+}
+.project-image {
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+.project-summary {
+  vertical-align: middle;
+  display: inline-block;
+  width: 60%;
+  margin-left: 5%;
+  overflow: hidden;
+}
+@media (max-width: 900px)
+{
+  .project {
+    max-width: 500px;
+    display: inline-block;
+    padding: 20px;
+  }
+  .project-image {
+    width: 100%;
+  }
+  .project-summary {
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-size: 11pt;
+  }
+}
