@@ -22,7 +22,7 @@ class Projects extends Component {
           "path": "/movienight.png",
           "languages": ["Java", "SQL", "Javascript", "HTML/CSS"],
           "summary": (<p>Movie browsing and shopping site composed of several Java microservices and databases. Users can perform
-            simple and advanced queries for movie or actor data, rate movies, add movies to shopping cart, checkout,
+            simple and advanced queries and filters for movie-related data, add movies to their cart, checkout using PayPal,
             along with hidden admin tasks for privileged users. The site is simply a proof of concept and not meant
             for real use; payment requests use Paypal sandbox for demo purposes.</p>)
         }}/>
