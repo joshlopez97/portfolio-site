@@ -1,5 +1,5 @@
-html, body {
-  background: #0d1031;
+html, body, div.pageholder, div.navigation {
+  background: #0e1325;
 }
 
 a, a:hover {
@@ -10,7 +10,6 @@ a, a:hover {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: #0d1031;
 }
 
 .page {
@@ -24,7 +23,6 @@ div.navigation {
   position: fixed;
   width: 100%;
   padding: 0 15px;
-  background: #0d1031;
 }
 
 div.navigation.top * {
