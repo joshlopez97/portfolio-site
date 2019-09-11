@@ -13,10 +13,8 @@ class Projects extends Component {
           "languages": ["Python", "Flask", "Redis", "Javascript", "HTML/CSS"],
           "summary": (<p>Document sharing platform and forum for college students developed as part of a small business
             idea. Users can interact with other users in the form of text posts, replies, and likes on their school's
-            page. The intention is to allow students to ask for help/advice on courses. Users can also upload PDF
-            documents of study resources for sale to other students, which creates a partially blurred PNG preview of
-            the first page in the document for the listing. All content on the site must be approved by moderators
-            before being publicly available to prevent copyright issues.</p>)
+            page. Users can also upload PDF documents of study resources for sale to other students. All content on the
+            site must be approved by moderators before being publicly available to prevent copyright issues.</p>)
         }}/>
         <Project info={{
           "title": "MovieNight",
@@ -33,7 +31,7 @@ class Projects extends Component {
           "link": "https://github.com/joshlopez97/portfolio-site",
           "path": "/portfolio.png",
           "languages": ["ReactJS", "Javascript"],
-          "summary": (<p>React website built to showcase my experience and projects in a way less restrictive than a
+          "summary": (<p>React website built to showcase my experience and projects in a less restrictive format than a
           resume. This project also helped me improve my React knowledge.</p>)
         }}/>
         <Project info={{
