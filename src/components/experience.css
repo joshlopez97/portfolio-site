@@ -1,0 +1,28 @@
+.company {
+  color: #98cefb;
+}
+div.job {
+  padding: 15px;
+}
+span.date {
+  float: right;
+  color: #eee;
+}
+span.job-title {
+}
+.job-info {
+  margin-bottom: 10px;
+}
+.job-description {
+  color: #b5d3e2;
+}
+@media (max-width: 500px)
+{
+  span.date {
+    float: initial;
+    display: block;
+  }
+  span.job-title {
+    display: block;
+  }
+}

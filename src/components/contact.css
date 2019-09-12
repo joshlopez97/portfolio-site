@@ -1,0 +1,21 @@
+.contact.page {
+  margin: 0;
+  text-align: center;
+}
+.contact-info {
+  padding: 40px 15px;
+}
+.contact-info > a {
+  margin: 10px 30px;
+  display: inline-block;
+  height: 40px;
+  border: 1px solid #98cefb;
+  padding: 10px 20px;
+  color: #98cefb;
+  line-height: 20px;
+}
+.contact-info > a:hover {
+  color: #77a5cc;
+  border: 1px solid #77a5cc;
+  background: #98cefb12;
+}
