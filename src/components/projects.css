@@ -33,6 +33,32 @@
 .external-link-icon-holder {
   display: inline-block;
   float: right;
+  width: 55px;
+}
+.fa.fa-external-link {
+  color: white;
+  float: right;
+  font-size: 20px;
+  margin-left: 15px;
+}
+.fa.fa-external-link:hover {
+  color: #77a5cc;
+}
+.hidden {
+  display: none !important;
+}
+.github-link {
+  float: right;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+}
+.github-link path {
+  fill: #fff;
+}
+.github-link:hover path {
+  fill: #77a5cc;
 }
 .project-image {
   width: 30%;
