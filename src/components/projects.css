@@ -3,11 +3,12 @@
   cursor: pointer;
   color: white;
   width: calc(100% - 30px);
-  border: 1px solid #98cefb;
   display: block;
   padding: 30px;
   margin: 20px 15px;
   vertical-align: middle;
+  background: #93b7d61f;
+  box-shadow: 5px 5px 5px #040917;
 }
 .project-title
 {
@@ -17,7 +18,7 @@
 {
   color: white;
   text-decoration: none;
-  background: #98cefb12;
+  background: #667e921f;
 }
 .project-header {
   width: 100%;
