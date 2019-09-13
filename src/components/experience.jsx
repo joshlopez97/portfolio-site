@@ -6,7 +6,7 @@ class Experience extends Component {
     return (
       <div className="experience page">
         <h1 className="page-header">Work Experience</h1>
-        <div className="job">
+        <div className="job" onClick={goToProofpoint}>
           <h5 className="company">Proofpoint</h5>
           <div className="job-info">
             <span className="job-title">Software Engineer</span>
@@ -22,7 +22,7 @@ class Experience extends Component {
             <li>Deploy features and bugfixes using Kubernetes, Jenkins, Puppet, and Docker</li>
           </ul>
         </div>
-        <div className="job">
+        <div className="job" onClick={goToIDTech}>
           <h5 className="company">ID Tech</h5>
           <div className="job-info">
             <span className="job-title">Software Engineer</span>
@@ -40,7 +40,7 @@ class Experience extends Component {
             </li>
           </ul>
         </div>
-        <div className="job">
+        <div className="job" onClick={goToProofpoint} >
           <h5 className="company">Proofpoint</h5>
           <div className="job-info">
             <span className="job-title">Software Engineer Intern</span>
@@ -72,6 +72,16 @@ class Experience extends Component {
       </div>
     );
   }
+}
+
+function goToProofpoint()
+{
+  window.location = "https://proofpoint.com";
+}
+
+function goToIDTech()
+{
+  window.location = "https://idtechproducts.com";
 }
 
 export default Experience;

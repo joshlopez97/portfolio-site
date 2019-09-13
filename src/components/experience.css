@@ -3,6 +3,16 @@
 }
 div.job {
   padding: 15px;
+  margin-bottom: 20px;
+  background: #45788833;
+  box-shadow: 5px 5px 5px #040917;
+  cursor: pointer;
+}
+div.job:hover {
+  background: #365d6933;
+}
+div.job:hover .company {
+  text-decoration: underline;
 }
 span.date {
   float: right;
@@ -15,6 +25,7 @@ span.job-title {
 }
 .job-description {
   color: #b5d3e2;
+  margin: 0;
 }
 @media (max-width: 500px)
 {
