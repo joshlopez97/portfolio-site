@@ -7,7 +7,7 @@
   padding: 30px;
   margin: 20px 15px;
   vertical-align: middle;
-  background: #93b7d61f;
+  background: #667e921f;
   box-shadow: 5px 5px 5px #040917;
 }
 .project-title
@@ -19,6 +19,9 @@
   color: white;
   text-decoration: none;
   background: #667e921f;
+}
+.project:hover .project-title {
+  text-decoration: underline;
 }
 .project-header {
   width: 100%;
@@ -34,32 +37,37 @@
 .external-link-icon-holder {
   display: inline-block;
   float: right;
-  width: 55px;
+  width: 70px;
+}
+.project-link {
+  display: inline-block;
+  float: right;
 }
 .fa.fa-external-link {
   color: white;
   float: right;
   font-size: 20px;
-  margin-left: 15px;
+  margin-left: 20px;
+  transform: translateY(2px);
 }
-.fa.fa-external-link:hover {
-  color: #77a5cc;
+.project-link-icon {
+  float: right;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: top;
+}
+.project-link-icon path {
+  fill: #fff;
+}
+.project-link-icon:hover path {
+  fill: #77a5cc;
+}
+.project-link-icon.website {
+  margin-left: 25px;
 }
 .hidden {
   display: none !important;
-}
-.github-link {
-  float: right;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: top;
-}
-.github-link path {
-  fill: #fff;
-}
-.github-link:hover path {
-  fill: #77a5cc;
 }
 .project-image {
   width: 30%;
