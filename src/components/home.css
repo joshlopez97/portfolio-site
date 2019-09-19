@@ -34,7 +34,25 @@
   color: #7e82b3;
   opacity: 0;
   animation: fadeup 0.5s ease-in forwards;
-  animation-delay: 0.6s;
+  animation-delay: 0.7s;
+}
+a.home-btn {
+  margin: 30px 30px 0;
+  display: inline-block;
+  height: 50px;
+  border: 1px solid #98cefb;
+  padding: 0 30px;
+  color: #98cefb;
+  line-height: calc(50px - 2.7pt);
+  font-size: 16pt;
+  opacity: 0;
+  animation: fadeup 0.5s ease-in forwards;
+  animation-delay: 0.9s;
+}
+a.home-btn:hover {
+  color: #77a5cc;
+  border: 1px solid #77a5cc;
+  background: #98cefb12;
 }
 @keyframes fadeup {
   to {
@@ -55,5 +73,11 @@
   }
   .navigation.top .line {
     display: none;
+  }
+  a.home-btn {
+    font-size: 12pt;
+    height: 35px;
+    line-height: calc(35px - 2pt);
+    padding: 0 20px;
   }
 }
