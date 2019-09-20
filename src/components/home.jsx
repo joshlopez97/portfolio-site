@@ -34,8 +34,7 @@ class Home extends Component {
           <div className="header-holder">
             <div className="header-text">Josh Lopez</div>
             <div className="header-subtext">Full-stack software engineer <span id="blink">_</span></div>
-            <a className="home-btn" href="mailto:josh@joshlopez.co">Get in touch</a>
-            <a className="home-btn" href="/JoshLopezResume.pdf">Resume</a>
+            <a className="home-btn" onClick={goToContact}>Get in touch</a>
           </div>
         </div>
       </div>
