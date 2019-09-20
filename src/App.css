@@ -18,6 +18,10 @@ div.content.pageholder {
   top: 100%;
   padding: 5%;
 }
+.box {
+  box-shadow: 0 0 10px #06080e;
+  background: #181f31;
+}
 .page::after {
   content: "";
   width: 100%;

@@ -2,8 +2,11 @@
   margin: 0;
   text-align: center;
 }
+.contact-info-section {
+  display: inline-block;
+}
 .contact-info {
-  padding: 5px 15px;
+  padding: 5px 30px;
   margin-bottom: 40px;
   display: inline-block;
   text-align: left;

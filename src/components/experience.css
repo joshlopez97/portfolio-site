@@ -4,8 +4,6 @@
 div.job {
   padding: 25px;
   margin-bottom: 20px;
-  background: #667e921f;
-  box-shadow: 5px 5px 5px #040917;
   cursor: pointer;
 }
 div.job:hover {

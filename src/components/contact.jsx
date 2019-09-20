@@ -6,10 +6,29 @@ class Contact extends Component {
     return (
       <div className="contact page">
         <h1 className="page-header">Get in touch</h1>
-        <div className="contact-info">
-          <div className="contact-entry">Email:&nbsp; <a href="mailto:josh@joshlopez.co">josh@joshlopez.co</a></div>
-          <div className="contact-entry">LinkedIn:&nbsp; <a href="https://linkedin.com/in/josh-lopez1/">josh-lopez-1</a></div>
-          <div className="contact-entry">Phone Number:&nbsp; <a href="/JoshLopezResume.pdf">See resume</a></div>
+        <div className="contact-info box">
+          <div className="contact-info-section">
+            <div className="contact-entry">
+              Email:
+            </div>
+            <div className="contact-entry">
+              LinkedIn:
+            </div>
+            <div className="contact-entry">
+              Phone Number:
+            </div>
+          </div>
+          <div style={{textAlign: "right"}} className="contact-info-section">
+            <div className="contact-entry">
+              <a href="mailto:josh@joshlopez.co">josh@joshlopez.co</a>
+            </div>
+            <div className="contact-entry">
+              <a href="https://linkedin.com/in/josh-lopez1/">josh-lopez-1</a>
+            </div>
+            <div className="contact-entry">
+              <a href="/JoshLopezResume.pdf">See on resume</a>
+            </div>
+          </div>
         </div>
       </div>
     );
