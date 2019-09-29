@@ -14,10 +14,11 @@ setInterval(()=>{
 }, 500);
 let lastScrollTop = 0;
 window.addEventListener("scroll", function(){
-  if (footerVisible())
-    console.log("bottom");
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (lastScrollTop - scrollTop > 2 && !footerVisible()){
+  if (document.getElementById("scroll-status").value === "scrolling") {
+    hideNavbar();
+  }
+  else if (lastScrollTop - scrollTop > 2 && !footerVisible()){
     showNavbar();
   } else if  (scrollTop - lastScrollTop > 2) {
     hideNavbar();

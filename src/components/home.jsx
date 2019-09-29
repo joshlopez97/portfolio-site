@@ -13,6 +13,7 @@ class Home extends Component {
             <span onClick={goToProjects}>Projects</span>
             <span onClick={goToExperience}>Experience</span>
             <span onClick={goToAbout}>About</span>
+            <input type="hidden" id="scroll-status" value=""/>
           </div>
           <div className="line left"/>
         </div>
@@ -54,9 +55,16 @@ function goToProjects() {
   scrollTo("projects");
 }
 
-function scrollTo(pageName, duration = 1500)
+function scrollTo(pageName, duration = 1500) {
+  scrollToPosition(document.getElementsByClassName(`${pageName} page`)[0].getBoundingClientRect().top + window.pageYOffset - 40, duration)
+}
+
+function scrollToPosition(pos, duration)
 {
-  let pos = document.getElementsByClassName(`${pageName} page`)[0].getBoundingClientRect().top + window.pageYOffset - 40;
+  document.getElementById("scroll-status").value = "scrolling";
+  setTimeout(() => {
+    document.getElementById("scroll-status").value = "";
+  }, duration);
   animateScroll.scrollTo(pos, {
     duration: duration,
     smooth: true
@@ -72,11 +80,7 @@ function goToAbout() {
 }
 
 function goToContact() {
-  let pos = document.getElementsByClassName(`footer`)[0].getBoundingClientRect().top - window.innerHeight + window.pageYOffset;
-  animateScroll.scrollTo(pos, {
-    duration: 1500,
-    smooth: true
-  });
+  scrollToPosition(document.getElementsByClassName(`footer`)[0].getBoundingClientRect().top - window.innerHeight + window.pageYOffset);
 }
 
 export default Home;
