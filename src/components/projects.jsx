@@ -12,11 +12,27 @@ class Projects extends Component {
           "github": "https://github.com/joshlopez97/grade-tip",
           "site": "https://gradetip.com",
           "path": "/gradetip.png",
-          "languages": ["Python", "Flask", "Redis", "Javascript", "HTML/CSS"],
+          "languages": ["Python", "Flask", "Redis", "JavaScript", "HTML/CSS"],
           "summary": (<p>Document sharing platform and forum for college students developed as part of a small business
             idea. Users can interact with other users in the form of text posts, replies, and likes on their school's
             page. Users can also upload PDF documents of study resources for sale to other students. All content on the
             site must be approved by moderators before being publicly available to prevent copyright issues.</p>)
+        }}/>
+        <Project info={{
+          "title": "Pathfinder Visualizer",
+          "link": "https://github.com/joshlopez97/pathfinder-visualizer",
+          "github": "https://joshlopez97.github.io/pathfinder-visualizer/",
+          "site": "https://joshlopez97.github.io/pathfinder-visualizer/",
+          "path": "/pathfinder.gif",
+          "languages": ["React", "JavaScript", "Graph Algorithms"],
+          "summary": (
+            <p>This application provides visualizations of pathfinding algorithms on undirected graphs, showing node
+              exploration and the shortest path found. This project is brand new and I'm really excited about it. So
+              far, I've added Dijkstra's shortest path algorithm and A* search. Check out my <a
+                href="https://joshlopez97.github.io/pathfinder-visualizer/">latest
+                deployment </a> on GitHub pages. I'll continue to add more customization and features to this project in
+              the coming weeks.
+            </p>)
         }}/>
         <Project info={{
           "title": "MovieNight",
@@ -24,7 +40,7 @@ class Projects extends Component {
           "github": "https://github.com/joshlopez97/MovieNight",
           "site": "https://movienight.dev",
           "path": "/movienight.png",
-          "languages": ["Java", "SQL", "Javascript", "HTML/CSS"],
+          "languages": ["Java", "SQL", "JavaScript", "HTML/CSS"],
           "summary": (
             <p>Movie browsing and shopping site composed of several Java microservices and databases. Users can perform
               simple and advanced queries and filters for movie-related data, add movies to their cart, checkout using
@@ -37,7 +53,7 @@ class Projects extends Component {
           "link": "https://github.com/joshlopez97/portfolio-site",
           "github": "https://github.com/joshlopez97/portfolio-site",
           "path": "/portfolio.png",
-          "languages": ["ReactJS", "Javascript"],
+          "languages": ["ReactJS", "JavaScript"],
           "summary": (<p>React website built to showcase my experience and projects in a less restrictive format than a
             resume. This project also helped me improve my React knowledge.</p>)
         }}/>
@@ -46,7 +62,7 @@ class Projects extends Component {
           "link": "https://idtechproducts.com/products/unattended-payments/vivostate-terminal-management-system/",
           "site": "https://idtechproducts.com/products/unattended-payments/vivostate-terminal-management-system/",
           "path": "/idtech.png",
-          "languages": ["Node.js", "Express", "Javascript", "HTML/CSS"],
+          "languages": ["Node.js", "Express", "JavaScript", "HTML/CSS"],
           "summary": (
             <p>Mobile web application built for ID Tech with Node.js and Express that enables customers to easily
               monitor
@@ -61,7 +77,7 @@ class Projects extends Component {
           "link": "https://github.com/joshlopez97/iDiet",
           "github": "https://github.com/joshlopez97/iDiet",
           "path": "/idiet.png",
-          "languages": ["Node.js", "Express", "Javascript", "HTML/CSS"],
+          "languages": ["Node.js", "Express", "JavaScript", "HTML/CSS"],
           "summary": (
             <p>Mobile web application that produces weekly diet plans based on the Harris-Benedict equation for
               recommended calories, while also keeping within a specified financial budget. The food suggestions are

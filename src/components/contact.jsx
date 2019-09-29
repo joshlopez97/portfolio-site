@@ -26,7 +26,7 @@ class Contact extends Component {
               <a href="https://linkedin.com/in/josh-lopez1/">josh-lopez-1</a>
             </div>
             <div className="contact-entry">
-              <a href="/JoshLopezResume.pdf">See on resume</a>
+              <a href="/Resume.pdf">See on resume</a>
             </div>
           </div>
         </div>
