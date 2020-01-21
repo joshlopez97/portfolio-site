@@ -12,14 +12,14 @@ class About extends Component {
         <div className="about-text">
           <p>Hello, welcome to my website! I'm a software engineer based out of Mountain View, CA with a
             passion for
-            learning new things and delivering <span className="emphasis">high quality applications</span>.</p>
-          <p> My main focus is customer-facing web and application development. I'm especially interested
-            in the product-side of things. I love learning what the customer needs from a product and getting
-            to help decide the best way to meet those needs.
+            learning new things and bringing value to software-based products.</p>
+          <p> My main focus is application-level development, particularly in web applications. Overall, I love finding ways
+            to improve a customer's experience with a product and find new ways to make the user experience as great as it can be.
+            I've gotten to be part of this process in web, mobile, and embedded application development.
           </p>
-          <p> Currently, I'm working as a Software Engineer at <a href="https://www.proofpoint.com/us">Proofpoint</a>.
+          <p> Currently, I'm working as a Software Engineer at <a href="https://www.amazon.com/Amazon-Kindle-Ereader-Family">Amazon</a>.
             Here,
-            I'm able to build and maintain software for Proofpoint's TAP Dashboard product.
+            I'm able to work on new features and improvements to Kindle E-reader software.
           </p>
         </div>
       </div>

@@ -6,11 +6,21 @@ class Experience extends Component {
     return (
       <div className="experience page">
         <h1 className="page-header">Work Experience</h1>
+        <div className="job box" onClick={goToAmazonKindle}>
+          <h5 className="company">Amazon</h5>
+          <div className="job-info">
+            <span className="job-title">Software Development Engineer</span>
+            <span className="date">November 2019 - Current</span>
+          </div>
+          <ul className="job-description">
+            <li>Ship new features and improvements to Kindle EInk reader software</li>
+          </ul>
+        </div>
         <div className="job box" onClick={goToProofpoint}>
           <h5 className="company">Proofpoint</h5>
           <div className="job-info">
             <span className="job-title">Software Engineer</span>
-            <span className="date">June 2019 - Current</span>
+            <span className="date">June 2019 - Nov 2019</span>
           </div>
           <ul className="job-description">
             <li>Optimize and improve analytics application that aggregates and processes massive amounts of customer
@@ -25,7 +35,7 @@ class Experience extends Component {
         <div className="job box" onClick={goToIDTech}>
           <h5 className="company">ID Tech</h5>
           <div className="job-info">
-            <span className="job-title">Software Engineer</span>
+            <span className="job-title">Software Engineer (Contract)</span>
             <span className="date">September 2018 - January 2019</span>
           </div>
           <ul className="job-description">
@@ -72,6 +82,11 @@ class Experience extends Component {
       </div>
     );
   }
+}
+
+function goToAmazonKindle()
+{
+  window.location = "https://www.amazon.com/Amazon-Kindle-Ereader-Family";
 }
 
 function goToProofpoint()
