@@ -20,7 +20,7 @@ class Experience extends Component {
           <h5 className="company">Proofpoint</h5>
           <div className="job-info">
             <span className="job-title">Software Engineer</span>
-            <span className="date">June 2019 - Nov 2019</span>
+            <span className="date">June 2019 - November 2019</span>
           </div>
           <ul className="job-description">
             <li>Optimize and improve analytics application that aggregates and processes massive amounts of customer
