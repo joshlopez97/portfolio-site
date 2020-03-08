@@ -2,7 +2,6 @@
   content: "";
   width: 90%;
   height: 1px;
-  background-color: #7e82b3;
   margin: 0 5%;
   position: absolute;
   top: 100%;
@@ -31,27 +30,25 @@
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 1px;
-  color: #8fb8ec;
   opacity: 0;
   animation: fadeup 0.5s ease-in forwards;
   animation-delay: 0.7s;
 }
-a.home-btn {
+.home-btn {
   margin: 30px 30px 0;
   display: inline-block;
   height: 50px;
-  border: 2px solid #a7aad8;
   padding: 0 30px;
-  color: #a7aad8;
   line-height: calc(50px - 2.7pt);
   font-size: 16pt;
   opacity: 0;
   animation: fadeup 0.5s ease-in forwards;
   animation-delay: 0.9s;
   cursor: pointer;
+  font-family: 'Roboto Slab', sans-serif;
 }
-a.home-btn:hover {
-  background: #98cefb12;
+.home-btn:hover {
+  background: #ffffff08;
 }
 @keyframes fadeup {
   to {
@@ -73,7 +70,7 @@ a.home-btn:hover {
   .navigation.top .line {
     display: none;
   }
-  a.home-btn {
+  .home-btn {
     font-size: 12pt;
     height: 35px;
     line-height: calc(35px - 2pt);

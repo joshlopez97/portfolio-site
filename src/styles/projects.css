@@ -16,7 +16,6 @@
 {
   color: white;
   text-decoration: none;
-  background: #667e921f;
 }
 .project:hover .project-title {
   text-decoration: underline;
@@ -25,7 +24,7 @@
   width: 100%;
 }
 .project-language {
-  background: #6c74ca54;
+  background: #091d2f;
   font-size: 9pt;
   padding: 3px 6px;
   border-radius: 5px;
@@ -59,7 +58,7 @@
   fill: #fff;
 }
 .project-link-icon:hover path {
-  fill: #77a5cc;
+  animation: color 0.3s ease-in forwards;
 }
 .project-link-icon.website {
   margin-left: 25px;

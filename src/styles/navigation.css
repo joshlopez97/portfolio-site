@@ -71,7 +71,6 @@ div.line {
   vertical-align: middle;
   width: 0;
   height: 1px;
-  background-color: #8fb8ec;
   margin: 26px 0;
 }
 
@@ -189,17 +188,6 @@ div.line.left {
 
 .quicklinks > svg:hover path {
   animation: color 0.3s ease-in forwards;
-}
-
-@keyframes color {
-  from {
-    fill: #ffffff;
-    color: #ffffff;
-  }
-  to {
-    fill: #b6bbf2;
-    color: #b6bbf2;
-  }
 }
 
 @keyframes grow {
