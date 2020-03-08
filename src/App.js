@@ -20,7 +20,7 @@ class App extends Component {
         linkedin: "https://www.linkedin.com/in/josh-lopez1/",
         email: "mailto:josh@joshlopez.co",
         resume: "/Resume.pdf",
-        amazon: "https://www.amazon.com/Amazon-Kindle-Ereader-Family",
+        amazon: "https://www.amazon.com/",
         proofpoint: "https://proofpoint.com",
         idtech: "https://idtechproducts.com",
         gradetip: "https://gradetip.com/",
