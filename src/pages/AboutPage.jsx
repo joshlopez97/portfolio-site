@@ -14,19 +14,19 @@ class AboutPage extends Component {
             Hello, my name is Josh. I'm a software engineer based out of Mountain View, CA.
           </p>
           <p>
-            I graduated in 2019 with a B.S. in Computer Science from UC Irvine. During school, I was able to work on
-            countless projects from the design phase all the way to the release phase. In my internships and other work
-            experience, I was able to work on larger scale projects where I faced new challenges that helped me grow my
-            confidence quite a bit as a software engineer. To this day, the most important thing I've learned (as cliche
-            as it sounds) is to never stop learning and be humble. The relevant skills needed for a job, the
-            requirements for a project, or the deadline for a deliverable may all change drastically without much
-            notice. That's why I think it's important to be able to learn and adapt in any context to be a strong
-            software engineer.
+            I graduated in 2019 with a B.S. in Computer Science from UC Irvine. During school and afterwards, I kept
+            my skills sharp by working on many <a href={this.props.links.github}>personal projects</a> with other
+            students and colleages. These were the most enjoyable projects to work on because I got to see my own ideas
+            & requirements turn into actual applications. I also got a chance to do some software engineering as an
+            intern and consultant. Moving to these roles as a student was an incredible opportunity to not only
+            strengthen my skills as a developer, but also practice other skills like drafting a design doc, reading
+            documentation, discussing trade-offs in a design decision, etc. These things really showed me how much
+            constant learning is involved in this field, which is a huge reason I enjoy doing it so much.
           </p>
           <p>
-            My main focus is application-level development, particularly in web applications. However, I generally enjoy
-            working on any projects that provide unique challenges and opportunites to learn. Outside of software
-            engineering, I really enjoy exercising, reading books, and discovering new music.
+            As a software engineer, my main focus is application development, particularly web applications. However, I
+            generally enjoy working on any projects that provide unique challenges and opportunites to learn.
+            Outside of software engineering, I really enjoy exercising, reading books, and discovering new music.
           </p>
           <p> Currently, I'm working as a Software Engineer at <a href={this.props.links.amazon}>Amazon</a>.
             Here, I'm able to work on new features and improvements to Kindle E-reader software.

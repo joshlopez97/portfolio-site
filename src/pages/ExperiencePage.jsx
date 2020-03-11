@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Controller, Scene } from 'react-scrollmagic';
+import { Tween, Timeline } from 'react-gsap';
 import '../styles/experience.css';
 import LinkIcon from "../components/LinkIcon";
 
@@ -6,11 +8,13 @@ class ExperiencePage extends Component {
   constructor(props) {
     super(props);
     Object.assign(this, this.props.navigationFunctions);
+
   }
 
   render() {
     return (
       <div className="experience page">
+        <h1 className="page-header">Work Experience</h1>
         <WorkExperience
           company={"Amazon"}
           topDate={"November 2019 - Current"}

@@ -34,7 +34,6 @@
 .external-link-icon-holder {
   display: inline-block;
   float: right;
-  width: 70px;
 }
 .project-link {
   display: inline-block;
@@ -54,11 +53,8 @@
   height: 22px;
   vertical-align: top;
 }
-.project-link-icon path {
-  fill: #fff;
-}
-.project-link-icon:hover path {
-  animation: color 0.3s ease-in forwards;
+.project-link-icon:hover {
+  animation: grow 0.2s ease-in forwards;
 }
 .project-link-icon.website {
   margin-left: 25px;
@@ -94,5 +90,15 @@
     width: 100%;
     margin: 0;
     font-size: 11pt;
+  }
+}
+@media (max-width: 500px)
+{
+  .project-link-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .fa.fa-external-link {
+    margin-left: 10px;
   }
 }

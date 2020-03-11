@@ -141,12 +141,6 @@ div.line.left {
   padding: 0 15px;
 }
 
-@media (max-width: 400px) {
-  .navlinks > span {
-    padding: 0 10px;
-  }
-}
-
 .navlinks > span:hover {
   opacity: 100;
   animation: color 0.2s ease-out forwards;
@@ -190,11 +184,24 @@ div.line.left {
   animation: color 0.3s ease-in forwards;
 }
 
-@keyframes grow {
-  from {
-    transform: scale(1);
+@media (max-width: 500px) {
+  div.navigation.top * {
+    font-size: 10.5pt;
   }
-  to {
-    transform: scale(1.1);
+  .navlinks {
+    padding: 15px 0;
+  }
+  .navlinks > span {
+    padding: 0 7px;
+  }
+  .navigation.top .line.right {
+    display: none;
   }
 }
+
+@media (max-width: 700px) {
+  .navigation.top .line {
+    display: none;
+  }
+}
+

@@ -12,6 +12,7 @@
 div.job {
   padding: 25px;
   margin-bottom: 20px;
+  opacity: 0;
 }
 span.date {
   float: right;
@@ -37,6 +38,7 @@ span.job-title {
   span.date {
     float: initial;
     display: block;
+    font-size: 11pt;
   }
   span.date.top-date {
     display: none;
