@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import '../styles/home.css';
 
 class HomePage extends Component {
@@ -51,7 +51,7 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
         {this.renderNavigationBars()}
         <div className="home pageholder">
           <div className="header-holder">
@@ -60,7 +60,7 @@ class HomePage extends Component {
             <span className="home-btn boxed" onClick={this.goToContact}>Get in touch</span>
           </div>
         </div>
-      </div>
+      </Fragment>
     )
   }
 }

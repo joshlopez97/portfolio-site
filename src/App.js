@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import './styles/App.css';
 import './styles/home.css';
 import './styles/navigation.css';
@@ -9,6 +9,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
 import {animateScroll} from "react-scroll/modules";
+import FadedIn from "./components/FadedIn";
 
 
 class App extends Component {
@@ -123,10 +124,14 @@ class App extends Component {
     this.autoScrollStarted(duration);
   };
 
+  navBarHeight = () => document.getElementById("top").clientHeight;
+
+  bottomOfPage = () => document.getElementsByClassName(`footer`)[0].getBoundingClientRect().top - window.innerHeight + window.pageYOffset;
+
   scrollToName = (pageName) => {
     const position = pageName === 'contact'
-      ? document.getElementsByClassName(`footer`)[0].getBoundingClientRect().top - window.innerHeight + window.pageYOffset
-      : document.getElementsByClassName(`${pageName} page`)[0].getBoundingClientRect().top + window.pageYOffset - 40;
+      ? this.bottomOfPage()
+      : document.getElementsByClassName(`${pageName} page`)[0].getBoundingClientRect().top + window.pageYOffset - this.navBarHeight();
     this.scrollToPosition(position, this.settings.scrollDurations[pageName]);
   };
 
@@ -153,27 +158,34 @@ class App extends Component {
   };
 
   render() {
+    const animationDurationPx = 200,
+      animationOffsetPx = -200;
     return (
-      <div className="app-container">
+      <Fragment>
         <HomePage links={this.settings.links}
                   showNavbar={this.state.showNavbar}
                   scrollToPosition={this.scrollToPosition}
                   scrollFunctions={this.settings.scrollFunctions}
         />
         <div className="content pageholder">
-          <AboutPage links={this.settings.links}/>
-          <ExperiencePage links={this.settings.links}
-                          navigationFunctions={this.settings.navigationFunctions}
-          />
-          <ProjectsPage links={this.settings.links}
-                        files={this.settings.files}
-          />
-          <ContactPage links={this.settings.links}
-                       files={this.settings.files}
-          />
+          <FadedIn triggerID={"about"} duration={animationDurationPx} offset={animationOffsetPx}>
+            <AboutPage links={this.settings.links}/>
+          </FadedIn>
+          <FadedIn triggerID={"experience"} duration={animationDurationPx} offset={animationOffsetPx}>
+            <ExperiencePage links={this.settings.links}
+                            navigationFunctions={this.settings.navigationFunctions}/>
+          </FadedIn>
+          <FadedIn triggerID={"projects"} duration={animationDurationPx} offset={animationOffsetPx}>
+            <ProjectsPage links={this.settings.links}
+                          files={this.settings.files}/>
+          </FadedIn>
+          <FadedIn triggerID={"contact"} duration={animationDurationPx} offset={animationOffsetPx}>
+            <ContactPage links={this.settings.links}
+                         files={this.settings.files}/>
+          </FadedIn>
           <Footer/>
         </div>
-      </div>
+      </Fragment>
     );
   }
 }

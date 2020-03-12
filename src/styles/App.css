@@ -14,9 +14,7 @@ html, body, div.pageholder, div.navigation {
   color: #bbb;
 }
 .pageholder {
-  height: 100%;
   width: 100%;
-  position: absolute;
 }
 .page {
   display: table;
@@ -24,7 +22,6 @@ html, body, div.pageholder, div.navigation {
   width: 100%;
 }
 div.content.pageholder {
-  top: 100%;
   padding: 5%;
 }
 .box {
