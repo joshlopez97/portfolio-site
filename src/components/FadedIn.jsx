@@ -10,6 +10,12 @@ const FadedIn = props => {
     children,
   } = props;
 
+  // FIXME: Need cross-platform alternative to tweened animations
+  const temp = false;
+  if (temp) {
+    return (<Fragment>{children}</Fragment>);
+  }
+
   // Optional props
   const translate = props.translate || defaults.translate;
   const duration = props.duration || defaults.duration;
