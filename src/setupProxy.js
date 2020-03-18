@@ -12,11 +12,12 @@ module.exports = function(app) {
   });
 
   const visited = (ip) => {
-    fetch("http://127.0.0.1:4845/email", {
+    fetch("http://165.227.85.161:4845/email", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
+      changeOrigin: true,
       redirect: 'follow',
       referrerPolicy: 'no-referrer',
       body: JSON.stringify({ "ip_address": ip})
