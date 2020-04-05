@@ -25,7 +25,7 @@ class App extends Component {
         proofpoint: "https://proofpoint.com",
         idtech: "https://idtechproducts.com",
         gradetip: "https://gradetip.com/",
-        gradetip_repo: "https://github.com/grade-tip",
+        gradetip_repo: "https://github.com/joshlopez97/grade-tip",
         pathfinder: "https://joshlopez97.github.io/pathfinder-visualizer/",
         pathfinder_repo: "https://github.com/joshlopez97/pathfinder-visualizer",
         quaggajs: "https://serratus.github.io/quaggaJS/",
