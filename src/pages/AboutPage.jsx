@@ -15,7 +15,7 @@ class AboutPage extends Component {
           </p>
           <p>
             I graduated in 2019 with a B.S. in Computer Science from UC Irvine. Shortly after graduating, I
-            joined <a href={this.props.links.amazon}>Amazon</a>'s Kindle team. Here, I'm develop robust applications and
+            joined <a href={this.props.links.amazon}>Amazon</a>'s Kindle team. Here, I build applications and
             frameworks to support Kindle E-reader software.
           </p>
           <p>
