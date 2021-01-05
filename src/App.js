@@ -20,7 +20,7 @@ class App extends Component {
         github: "https://github.com/joshlopez97",
         linkedin: "https://www.linkedin.com/in/josh-lopez1/",
         email: "mailto:josh@joshlopez.co",
-        resume: "/Resume.pdf",
+        resume: "/JoshLopezResume.pdf",
         amazon: "https://www.amazon.com/",
         proofpoint: "https://proofpoint.com",
         idtech: "https://idtechproducts.com",
@@ -38,7 +38,7 @@ class App extends Component {
         poission_repo: "https://github.com/joshlopez97/Poisson-Reconstruction",
       },
       files: {
-        resume: "/Resume.pdf",
+        resume: "/JoshLopezResume.pdf",
         gradetip_banner: "/gradetip.png",
         pathfinder_banner: "/pathfinder.gif",
         movienight_banner: "/movienight.png",
