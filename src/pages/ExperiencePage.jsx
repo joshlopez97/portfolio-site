@@ -40,7 +40,7 @@ class ExperiencePage extends Component {
           company={"ID Tech"}
           topDate={"September 2018 - January 2019"}
           clickAction={this.goToIdtech}>
-          <PositionInfo title="Software Engineer (Contract)"
+          <PositionInfo title="Software Engineer Co-Op"
                         date={"September 2018 - January 2019"}>
             <li>Contracted to work on small team to build a mobile terminal management system for customers to manage
               payment devices remotely

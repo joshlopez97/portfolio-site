@@ -51,7 +51,7 @@
   font-family: 'Roboto Slab', sans-serif;
 }
 .home-btn:hover {
-  background: #ffffff08;
+  text-decoration: underline;
 }
 @keyframes fadeup {
   to {

@@ -6,8 +6,12 @@
 .company:hover {
   border-bottom: 1px solid white;
 }
+.position-header {
+  margin-bottom: .5rem;
+}
 .position-holder {
   margin-bottom: 10px;
+  padding-left: 10px;
 }
 div.job {
   padding: 25px;
@@ -15,15 +19,17 @@ div.job {
 }
 span.date {
   float: right;
-  font-family: 'Roboto Slab', sans-serif;
 }
 span.job-title {
+  font-weight: bold;
+}
+span.date, span.job-title {
+  font-family: 'Roboto Slab', sans-serif;
 }
 .job-info {
   margin-bottom: 10px;
 }
 .job-description {
-  color: #b5d3e2;
   margin: 0;
 }
 @media (min-width: 501px)

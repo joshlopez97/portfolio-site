@@ -7,8 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: white;
 }
-html, body, div.pageholder, div.navigation {
-  background: #0a1e2f;
+html, body, div.pageholder, div.navigation, .project-language {
+  background: #111;
 }
 .header-subtext {
   color: #bbb;
@@ -25,8 +25,8 @@ div.content.pageholder {
   padding: 5%;
 }
 .box {
-  box-shadow: 0 0 10px #06080e;
-  background: #152a3e;
+  box-shadow: 0 0 10px #000;
+  background: #212121;
 }
 .page::after {
   content: "";
