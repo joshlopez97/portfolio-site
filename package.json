@@ -8,7 +8,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-gsap": "^1.2.0",
-    "react-scripts": "^3.4.0",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.7.16",
     "react-scrollmagic": "^2.1.1",
     "request-ip": "^2.1.3"
